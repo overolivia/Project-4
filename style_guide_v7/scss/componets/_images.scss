@@ -1,0 +1,19 @@
+
+
+.img {
+    &-avatar,
+    &-frame,
+    &-logo {
+        @include auto;
+    }
+    &-avatar,
+    &-frame {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+    &-frame {
+        padding: 13px;
+        border: 1px solid #ccc;
+    }
+}
+

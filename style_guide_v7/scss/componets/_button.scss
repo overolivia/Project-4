@@ -1,2 +1,68 @@
 /* Scss Document */
 
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $white;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: $radius;
+}
+
+.default {
+  background-color: $color-primary;
+    &:hover {
+         background-color: lighten($color-primary, 25%);
+         @include transition;
+    }
+}
+
+.error {
+  background-color: $color-error;
+    &:hover {
+         background-color: lighten($color-error, 25%);
+         @include transition;
+    }
+}
+
+.info {
+  background-color: $color-info;
+    &:hover {
+         background-color: lighten($color-info, 25%);
+         @include transition;
+    }
+}
+
+.success {
+  background-color: $color-success;
+    &:hover {
+         background-color: lighten($color-success, 25%);
+         @include transition;
+    }
+}
+
+.warning {
+  background-color: $color-warning;
+    &:hover {
+         background-color: lighten($color-warning, 25%);
+         @include transition;
+    }
+}
+
+@media (min-width: $breakpoint) {
+    
+.btn {
+  padding: 10px 30px;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.logo {
+  margin-left: initial;
+  margin-right: initial;
+}
+    
+}
